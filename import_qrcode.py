@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    img = qrcode.make('https://www.instagram.com/sweet_aroma_pr/')
+    img = qrcode.make('www.example.com')
     img.save('qrcode.png')
     return send_file('qrcode.png', mimetype='image/png')
 
